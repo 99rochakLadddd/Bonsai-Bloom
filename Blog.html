@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<head>
+    <title>BLOOMBONSAI</title>
+
+    <!--this is style-->
+
+    <style type="text/css">
+        .menu {
+            width: 400px;
+            float: left;
+            height: -500px;
+            margin-left: -320px;
+            margin-top: -180px;
+            height: 0px;
+            position: fixed;
+        }
+
+        .menu .active {
+            color: #ff8201;
+        }
+
+        ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            margin-left: 500px;
+            margin-top: -35px;
+        }
+
+        ul li {
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 14px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #ff7200;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            margin-top: 80px;
+            margin-left: 70px;
+            background-position: center;
+            background-color: #88c4f8;
+
+        }
+
+        .topic {
+            padding-left: 0px;
+            font-family: Arial;
+            position: relative;
+            left: -60px;
+            right: 60px;
+            font-size: 20px;
+            font-family: sans-serif;
+            text-align: center;
+            text-shadow: 2px 2px pink;
+            color: rgba(0, 0, 0, 0.747);
+            background-color: antiquewhite;
+            font-weight: 55px;
+        }
+
+        .number1 {
+            text-transform: capitalize;
+            font-family: 'Fjalla One', sans-serif;
+            padding: 0px;
+            position: relative;
+            left: 50px;
+            position: relative;
+            padding-left: 0px;
+            color: blanchedalmond
+        }
+
+        .number2 {
+            padding: 0px;
+            position: relative;
+            left: 50px;
+            position: relative;
+            padding-left: 0px;
+            color: blanchedalmond;
+        }
+
+        .number3 {
+            padding: 0px;
+            position: relative;
+            left: 50px;
+            position: relative;
+            padding-left: 0px;
+            color: blanchedalmond
+        }
+
+        .number4 {
+            padding: 0px;
+            position: relative;
+            left: 50px;
+            position: relative;
+            padding-left: 0px;
+            color: blanchedalmond
+        }
+
+        .number5 {
+            padding: 0px;
+            position: relative;
+            left: 50px;
+            position: relative;
+            padding-left: 0px;
+            color: blanchedalmond
+        }
+
+        .number6 {
+            padding: 0px;
+            position: relative;
+            left: 50px;
+            position: relative;
+            padding-left: 0px;
+            color: blanchedalmond
+        }
+
+        .number7 {
+            padding: 0px;
+            position: relative;
+            left: 50px;
+            position: relative;
+            padding-left: 0px;
+            color: blanchedalmond
+        }
+
+        .one {
+            font-family: 'Acme', sans-serif;
+            margin: 0px;
+            padding: 15px;
+            position: relative;
+            text-indent: 100px;
+            text-align: justify;
+            left: -50px;
+            right: -400px;
+            color: black;
+            background-color: white;
+            text-align: justify;
+            justify-items: center;
+            margin-right: 200px;
+            margin-left: 100px;
+        }
+
+        .two {
+            padding: 15px;
+            position: relative;
+            text-indent: 100px;
+            text-align: justify;
+            left: -50px;
+            right: -400px;
+            color: black;
+            background-color: white;
+            text-align: justify;
+            justify-items: center;
+            margin-right: 165px;
+            margin-left: 82px;
+            font-family: 'Acme', sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: normal;
+
+        }
+
+        .three {
+            font-family: 'Acme', sans-serif;
+            margin: 0px;
+            padding: 15px;
+            position: relative;
+            text-indent: 100px;
+            text-align: justify;
+            left: -50px;
+            right: -400px;
+            color: black;
+            background-color: white;
+            text-align: justify;
+            justify-items: center;
+            margin-right: 165px;
+            margin-left: 90px;
+        }
+
+        .four {
+            font-family: 'Acme', sans-serif;
+            margin: 0px;
+            padding: 15px;
+            position: relative;
+            text-indent: 100px;
+            text-align: justify;
+            left: -50px;
+            right: -400px;
+            color: black;
+            background-color: white;
+            text-align: justify;
+            justify-items: center;
+            margin-right: 229px;
+            margin-left: 100px;
+        }
+
+        .five {
+            font-family: 'Acme', sans-serif;
+            margin: 0px;
+            padding: 15px;
+            position: relative;
+            text-indent: 100px;
+            text-align: justify;
+            left: -50px;
+            right: -400px;
+            color: black;
+            background-color: white;
+            text-align: justify;
+            justify-items: center;
+            margin-right: 165px;
+            margin-left: 105px;
+        }
+
+        .six {
+            font-family: 'Acme', sans-serif;
+            margin: 0px;
+            padding: 15px;
+            position: relative;
+            text-indent: 100px;
+            text-align: justify;
+            left: -50px;
+            right: -400px;
+            color: black;
+            background-color: white;
+            text-align: justify;
+            justify-items: center;
+            margin-right: 165px;
+            margin-left: 96px;
+        }
+
+        .seven {
+            font-family: 'Acme', sans-serif;
+            margin: 0px;
+            padding: 15px;
+            position: relative;
+            text-indent: 100px;
+            text-align: justify;
+            left: -50px;
+            right: -400px;
+            color: black;
+            background-color: white;
+            text-align: justify;
+            justify-items: center;
+            margin-right: 165px;
+            margin-left: 100px;
+        }
+
+        .image-edit {
+            padding: 0px;
+            margin: 0px;
+            margin-left: 150px;
+        }
+
+        .tech {
+            padding-left: 0px;
+            font-family: Arial;
+            position: relative;
+            left: -60px;
+            right: 60px;
+            font-size: 20px;
+            font-family: sans-serif;
+            text-align: center;
+            text-shadow: 2px 2px pink;
+            color: rgba(0, 0, 0, 0.747);
+            background-color: antiquewhite;
+            font-weight: 55px;
+        }
+
+        .first {
+            text-transform: capitalize;
+            font-family: 'Fjalla One', sans-serif;
+            padding: 0px;
+            position: relative;
+            left: 50px;
+            position: relative;
+            padding-left: 0px;
+            color: blanchedalmond
+        }
+
+        .second {
+            text-transform: capitalize;
+            font-family: 'Fjalla One', sans-serif;
+            padding: 0px;
+            position: relative;
+            left: 50px;
+            position: relative;
+            padding-left: 0px;
+            color: blanchedalmond
+        }
+
+        .p1 {
+            padding: 15px;
+            position: relative;
+            text-indent: 100px;
+            text-align: justify;
+            left: -50px;
+            right: -400px;
+            color: black;
+            background-color: white;
+            text-align: justify;
+            justify-items: center;
+            margin-right: 165px;
+            margin-left: 82px;
+            font-family: 'Acme', sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .image-last {
+            padding: 0px;
+            margin: 0px;
+            margin-left: 150px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- creating nav bar -->
+    <div class="image">
+        <a href="#"> <img src="img/logo.png"
+                style="width: 225px; margin-left: -30px; height: 150px; position: fixed; margin-top: -90px;" /></a>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Product.html">PRODUCT</a></li>
+            <li><a href="Course.html">COURSES</a></li>
+            <li><a href="Blog.html" class="active">BLOG</a></li>
+            <li><a href="Research.html">RESEARCH</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+        </ul>
+    </div>
+    
+<!-- inserting the impacts of technology on daily life and business -->
+    <div class="impact"></div>
+    <div class="topic">
+        <h1> IMPACTS OF TECHNOLOGY ON DAILY LIVES AND BUSINESS.</h1>
+    </div>
+    <br>
+    <h2 class="number1">
+        <bold>1.<u>Further developed Correspondence</bold></u>
+    </h2>
+    <div class="image-edit"><img
+            src="https://media.istockphoto.com/id/1354411889/photo/businesswoman-gestures-during-video-call.jpg?b=1&s=170667a&w=0&k=20&c=gVjdiMxuskN1rmtsghUPFElE4Ud8huC1BER3EwI1Fsc= "
+            width="900px" height="550px"></div>
+    <p class="one">However, thanks to technology, messaging and social media have supplanted the standard voice call as
+        a method of staying in touch.
+        Video calling is a different media that has experienced a rise in recent years. Although the idea is not very
+        novel—it has existed for roughly as long as Bell's telephone—the advent of high-speed broadband at reasonable
+        costs has made it much simpler to send <br>and receive the quantities of data required for a video chat.Video
+        calling
+        is a different media that has experienced a rise in recent years. Although the idea is not very novel—it has
+        existed for roughly as long as Bell's telephone—the advent of high-speed broadband at reasonable costs has made
+        it much simpler to send and receive the quantities of data required for a video chat.<br><br>Video calls have
+        changed
+        more than simply social interactions, too. Due to the pandemic, more people than ever are working from home,
+        and video conferencing has replaced in-person meetings as office personnel now meets in bedrooms instead of
+        boardrooms (or wherever else they can find space to work at home). However, thanks to technology, messaging
+        and social media have supplanted the standard voice call as a method of staying in touch.</p>
+    <h2 class="number2">2.<u>Diminished Security</u></p>
+    </h2>
+    <div class="image-edit">,<img
+            src="https://media.istockphoto.com/id/1290686368/photo/hacker.jpg?b=1&s=170667a&w=0&k=20&c=61EXABuZoplWNbP6ps4bX0uW6Lv7ld-jQFnrCpo3OCE="
+            width="900px" height="550px"></div>
+    <p class="two">Shopping? Amazon is where it's done. Visiting with old friends? It's email, FaceTime, or Snapchat. Do
+        you desire
+        entertainment? Netflix, or play games online. Research? Go to Google. We can now almost entirely do our everyday
+        activities online, therefore a rise in our online time appears inevitable.<br> We have never had it so
+        convenient,
+        but having everything available online has also left us open to danger. Every action we take online is
+        monitored,
+        and every place we go, we leave a digital trail. This is a fact that scammers and hackers work hard to take
+        advantage
+        Ofcourse, just like with everything else, technology has given us the means
+        to safeguard our safety as our lives move online.</p>
+    <h2 class="number3">
+        <bold>3.<u>Available Shopping</bold></u>
+    </h2>
+    <div class="image-edit"><img
+            src="https://www.deltadigit.com/wp-content/uploads/2016/12/Websites-that-deliver-good-to-Nepal.jpg"
+            width="900px" height="550px"></div>
+    <p class="three">You can't really compare seeing a product in person before you buy it, and you can't exactly get
+        takeaway online
+        (you can order a delivery, but that's not quite the same). Despite the convenience and popularity of shopping
+        online, the high street should not be neglected.Technology hasn't ignored traditional retail either. We no
+        longer have to worry about giving out cash or entering a pin number—just tap to pay, and you're done—thanks to
+        contactless cards and phone payments. No of the size of your company, a Point of Sale (POS) system is a great
+        asset.</p>
+    <h2 class="number4">
+        <bold>4.<u>Data Access</u></bold>
+    </h2>
+    <div class="image-edit"><img src="https://www.scorch.im/wp-content/uploads/2015/02/seo.jpg" height="550"></div>
+    <p class="four">These days, learning something only requires a few clicks to do. For many of us, we can just pull
+        out our phones,
+        start Googling, or even ask our smart home assistant to do it for us.Nowadays, thanks to technological
+        advancements, you can discover tens of thousands of web pages devoted to just about anything you can imagine.
+        Almost everyone now views a mobile phone as a necessary gadget, well surpassing its initial use as a telephone
+        (to actually talk to people), and serving as our portable gateway to the online world.</p>
+    <h2 class="number5">
+        <bold>5.<u>Virtual Public activities</bold></u>
+    </h2>
+    <div class="image-edit"><img
+            src="https://images.unsplash.com/photo-1656164630621-8974e3a7e85c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c29jaWFsJTIwbWVkaWElMjBzaXRlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            width="900px" height="550"></div>
+    <p class="five">The rise of social media has caused yet another significant revolution in our way of life. The early
+        years of
+        websites like Tumblr and the initial version of Facebook already seem like a different era because of how
+        quickly
+        this sector has developed. We can now view the waking lives of others in real time through services like
+        Snapchat,
+        TikTok, Instagram, and others, whether they are friends with a small following or celebrities with millions.<br>
+        Businesses have joined in the fun, and because they have the power to positively or negatively impact a brand's
+        reputation, most businesses view a knowledgeable social media manager as crucial. Digital marketing is a crucial
+        component of every business with an online presence and one that must be done well.</p>
+    <h2 class="number6">
+        <bold>6.<u>Adaptable Working</u></bold>
+    </h2>
+    <div class="image-edit"><img
+            src="https://images.unsplash.com/photo-1620862657788-a403bdf6dd63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzd8fHdvcmslMjBmcm9tJTIwaG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            width="900px" height="550"></div>
+    <p class="six">While 2020 will be remembered for many unfavorable events, one of its most notable advantages has
+        been the embrace
+        of remote work. Many were forced to leave their offices as the virus spread and log on from their homes.
+        According
+        to one study, the percentage of Americans who worked from home at its highest was 42%. And even after this
+        pandemic is over, the tendency appears to be here to stay.<br> Major corporations like Twitter and Microsoft
+        have
+        already announced that their employees can work from home at any time. Once again, technological breakthroughs
+        and the ideal union of hardware and broadband have made all of this feasible.</p>
+    <h2 class="number7">
+        <bold>7.<u>More astute Wellbeing Following</u></bold>
+    </h2>
+    <div class="image-edit"><img
+            src="https://images.unsplash.com/photo-1609096458733-95b38583ac4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            width="900px" height="550"></div>
+    <p class="seven">The popularity of workout equipment has become yet another technological trend. Even though we've
+        been utilizing
+        technology to keep in shape for a while, we've never been able to do it in a way that is so scientific, with
+        real-time feedback and suggestions from tools that can track our exercises as we accomplish them. Look no
+        farther than Apple, whose Apple Watch is widely promoted as a fitness product, to understand how invested we
+        are. So what exactly can a fitness watch do? The time when your "sports watch" could only keep track of your
+        lap time is long gone. We can now track and monitor our workout plans, check our blood pressure and pulse rates,
+        and even check our sleeping patterns.</p> <br>
+    <div class="tech">
+        <h1><b>4 Impacts of Technology on Selling:<br> How Tech Has Streamlined<br>Bonsai Sales<b></h1>
+    </div>
+    <br>
+    <div class="image-last"><img
+            src="https://media.istockphoto.com/id/1317277259/photo/asian-male-florist-owner-of-small-business-flower-shop-using-digital-tablet-while-working-on.jpg?b=1&s=170667a&w=0&k=20&c=rtBP8KwgWMILeywquJuLB66E1mxgzw8O23K7Ty7H8OI="
+            width="800px" height="550"></div><br>
+    <h2 class="first">
+        <bold>1. Big Data:</bold>
+    </h2>
+    <p class="p1">In the modern world, a sales organization's ability to gain a competitive advantage rests primarily on
+        their
+        capacity to successfully collect, manage, and analyze enormous volumes of customer data that reveal information
+        about their
+        clients' activities and purchasing patterns. Despite this, only about 12% of the data that a corporation has
+        access to is
+        really analysed. Big data technology can help with this.Sales firms may now manage prospecting, a crucial stage
+        in the sales
+        process, using big data analytics solutions. Finding and certifying new consumers with certain requirements and
+        wants has
+        traditionally taken a lot of time and effort.<br></p>
+    <h2 class="first">
+        <bold>2. Social Platforms:
+    </h2>
+    </bold>
+    <p class="p1">The emergence of a variety of social media platforms for recruiting and
+        engaging new customers—a crucial stage in bringing a consumer into the sales funnel—has been facilitated by the
+        proliferation
+        of social technology. Through conversations about goods and services, social media platforms give businesses the
+        chance to
+        "shake hands" with customers and gain insightful information that could result in a sale. Social networking, as
+        opposed to
+        traditional sales, allows you to shake hands with millions of people simultaneously all over the world.Thanks to
+        social media
+        networks, consumers are more connected than ever. According to statistics, the majority of people use social
+        media peer
+        suggestions and evaluations for their product research Social media user feedback assists companies in reworking
+        and reshaping
+        their messages and sales strategies to ensure future success. Studies indicate that 78% of sales professionals
+        who use social
+        media routinely outsell their rivals who don't, giving social platforms a distinct advantage for sales
+        teams.<br></p>
+    <h2 class="first">
+        <bold>3. Mobile technology:
+    </h2>
+    </bold>
+    <p class="p1">The widespread use of portable electronics like smartphones and tablets has
+        permanently altered several facets of the selling process. Customers' shopping experiences have changed as a
+        result of the
+        opportunity to browse, compare, and buy goods and services online. Since research indicates that 93% of
+        consumers who use
+        their mobile device to investigate potential products and services ultimately make a purchase, marketers and
+        sales teams
+        should take that into consideration.This mobile boom offers a fantastic chance to deploy mobile devices in the
+        field to
+        acquire a competitive edge. The usage of a cloud-based CRM technology gives staff members quick, simple
+        access.<br></p>
+    <h2 class="first">
+        <bold>4. Cloud-based CRM Technology:
+    </h2>
+    </bold>
+    <p class="p1">Customer relationship management systems are effective tools that
+        integrate marketing, sales, and client support to give firms a comprehensive perspective of the customer
+        relationship.While
+        onsite CRM software has its advantages, cloud computing frees workers from onsite computers and servers to
+        elevate CRM to a
+        whole new level. CRM data that is kept in the cloud may be accessed instantly from any location at any time.
+        When implemented properly, a CRM offers sales staff a significant advantage by enabling them to quickly and
+        accurately gain
+        insights into what consumers are doing, what they are drawn to, and when they are most likely to make a
+        purchase.</p><br>
+</body>
+
+</html>
